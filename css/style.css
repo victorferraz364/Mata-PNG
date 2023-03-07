@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.borda {
+    border: 1px solid rgb(0, 255, 13);
+}
+.textBorder {
+    border: 3px solid purple;
+}
+.botaoPlay {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+.caixa {
+    
+    width: 100px;
+    height: 100px;
+}
+.img {
+    width: 100%;
+    height: 80%;
+}
