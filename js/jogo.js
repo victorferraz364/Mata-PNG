@@ -36,7 +36,7 @@ function posRnd() {
     
 
     var png = document.createElement('img')
-    png.src = 'img/png_1.jpg'
+    png.src = 'img/Asset 3.png'
     png.className = 'caixa'
     png.style.left = posX + 'px'
     png.style.top = posY + 'px'

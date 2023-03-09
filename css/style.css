@@ -2,23 +2,42 @@
     margin: 0;
     padding: 0;
 }
-.borda {
-    border: 1px solid rgb(0, 255, 13);
-}
-.textBorder {
-    border: 3px solid purple;
-}
-.botaoPlay {
-    position: absolute;
-    top: 50px;
-    left: 10px;
-}
-.caixa {
+body {
+    background: url("../img/bg_.png") no-repeat;
+    background-color: #432b85;
+    color: white;
     
-    width: 100px;
-    height: 100px;
 }
-.img {
-    width: 100%;
-    height: 80%;
+.content {
+    position: relative;
+    color: white;
+    text-align: center;
+    height: 00vh;
 }
+.container-index {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 100vh;
+    
+    /*background-image: url(../img/chao.png);*/
+    /*background-repeat: no-repeat;*/
+    /*background-position:bottom; */
+}
+
+.box {
+    position: relative;
+    justify-content: center ;
+    align-items: end;
+}
+  .box img {
+    max-width: 100%;
+    height: auto;
+}
+.container-index button {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+ }
