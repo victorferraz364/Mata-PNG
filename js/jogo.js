@@ -11,9 +11,6 @@ function sizeFix() {
 }
 sizeFix()
 
-
-
-
 function posRnd() {   
     
     if (document.getElementById('idPng')) {
@@ -23,7 +20,11 @@ function posRnd() {
             window.location.href = "over.html"
           
         } else {
+
             document.getElementById('lf' + life).src = "img/life_over.png"
+            document.getElementById('lf' + life).className = 'life_over'
+           
+
             life++
         }
     }
@@ -35,9 +36,11 @@ function posRnd() {
     console.log(posX, posY)
     
 
+    const ghost = ["img/ghost_1.png", "img/ghost_2.png"]
+    var rndGhost = Math.floor(Math.random() * ghost.length)
     var png = document.createElement('img')
-    png.src = 'img/Asset 3.png'
-    png.className = 'caixa'
+    png.src = ghost[rndGhost]
+    png.className = 'ghosts'
     png.style.left = posX + 'px'
     png.style.top = posY + 'px'
     png.style.position = 'absolute'
