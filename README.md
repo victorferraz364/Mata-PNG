@@ -10,3 +10,6 @@ O projeto original no curso consiste em um joguinho simples de matar mosquitos, 
 <h2>Funcionalidade</h2>
 como menciado, o jogo se baseava em um spawn aleatoria de mosquitos em um intervalo de tempo pré-definido pela dificuldade, a cada mosquito que fugia um ponto de vida era perdido, podendo perder 3 vidas, depois disso era gameover, caso conseguisse chegar a 0 no cronometro você ganhava.
 Na minha versão vou usar o tema de halloween, usando um pouco do que sei em edição de imagem para criar minhas pngs, e brincar um pouco com animações de css para os fantasmas e outros estilos que pode ser verificado no projeto.
+
+<h2>Finalizando</h2>
+Tive um bom trabalho com esse projeto, eu vi que devo praticar e rever mais conteudos, pricinpalmente de css. Acabei fazeno um mix de css com bosttrap, a montagem de cenários não ficou de maneira ideal, no geral é uma grande gambiarra que funciona, haha. 
