@@ -27,7 +27,7 @@ function posRnd() {
         }
     }
     
-    var posX = Math.floor(Math.random() * widhtBody) -120
+    var posX = Math.floor(Math.random() * widhtBody) -130
     var posY = Math.floor(Math.random() * heightBody) -100
     console.log(posX, posY)
     

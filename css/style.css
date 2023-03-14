@@ -75,3 +75,13 @@ h2 {
 .animation {
     animation: fly forwards 1s;
 }
+@keyframes fly {
+    to {
+        transform: translateX(0);
+        rotate: 30deg; 
+        
+    }
+    from {
+        transform: translateX(80%);
+    }
+}
