@@ -78,7 +78,7 @@ h2 {
 @keyframes fly {
     to {
         transform: translateX(0);
-        rotate: 30deg; 
+        rotate: 31deg; 
         
     }
     from {
