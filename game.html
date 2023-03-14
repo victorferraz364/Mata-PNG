@@ -18,9 +18,9 @@
 
 </head>
 
-<body onresize="">
+<body onresize="sizeFix()">
 
-    <div class="container">
+
         <div class="row">
           <div class="col-auto d-flex flex-nowrap">
            <img id="lf4" src="img/life.png" class="life" alt="">
@@ -30,9 +30,10 @@
           </div>
           <div class="col-auto d-flex flex-wrap align-items-center justify-content-start">
             <span id="chr" class="h2"></span>
-          </div>
         </div>
-      </div>
+    </div>
+    <span id="pontos" class="h2"></span>
+       
       
 
 
@@ -47,7 +48,7 @@
     <script>
         var spawn = setInterval(function() {
             posRnd() }
-            , 1500)
+            , 1000)
     </script>
 
         <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

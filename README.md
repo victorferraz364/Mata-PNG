@@ -9,4 +9,4 @@ O projeto original no curso consiste em um joguinho simples de matar mosquitos, 
 
 <h2>Funcionalidade</h2>
 como menciado, o jogo se baseava em um spawn aleatoria de mosquitos em um intervalo de tempo pré-definido pela dificuldade, a cada mosquito que fugia um ponto de vida era perdido, podendo perder 3 vidas, depois disso era gameover, caso conseguisse chegar a 0 no cronometro você ganhava.
-Na minha versão vou usar o tema de halloenw, usando um pouco do que sei em edição de imagem para criar minhas pngs, e brincar um pouco animações de css para os fantamas e outros estilos que pode ser verificado no projeto.
+Na minha versão vou usar o tema de halloenw, usando um pouco do que sei em edição de imagem para criar minhas pngs, e brincar um pouco com animações de css para os fantasmas e outros estilos que pode ser verificado no projeto.

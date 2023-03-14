@@ -1,12 +1,12 @@
 var widhtBody = 0 
 var heightBody = 0
 var life = 1
-var chrRmng = 10
+var chrRmng = 15
+var points = 0
 
 function sizeFix() {
 	heightBody = window.innerHeight
      widhtBody = window.innerWidth
-	console.log(widhtBody, heightBody)
 
 }
 sizeFix()
@@ -21,33 +21,33 @@ function posRnd() {
           
         } else {
 
-            document.getElementById('lf' + life).src = "img/life_over.png"
+            document.getElementById('lf' + life).src = ("img/life_over.png")
             document.getElementById('lf' + life).className = 'life_over'
-           
-
             life++
         }
     }
-    var posX = Math.floor(Math.random() * widhtBody) - 100
-    var posY = Math.floor(Math.random() * heightBody) - 100
     
-    posX = posX < 0 ? 0 : posX 
-    posY = posY < 0 ? 0 : posY
+    var posX = Math.floor(Math.random() * widhtBody) -120
+    var posY = Math.floor(Math.random() * heightBody) -100
     console.log(posX, posY)
     
+    posX = posX < 120 ? 120 : posX 
+    posY = posY < 120 ? 120 : posY
+    
 
-    const ghost = ["img/ghost_1.png", "img/ghost_2.png"]
-    var rndGhost = Math.floor(Math.random() * ghost.length)
-    var png = document.createElement('img')
-    png.src = ghost[rndGhost]
-    png.className = 'ghosts'
-    png.style.left = posX + 'px'
-    png.style.top = posY + 'px'
-    png.style.position = 'absolute'
-    png.id = 'idPng'
-    document.body.appendChild(png) 
-    png.onmouseover = function () {
+    const ghostPng = ["img/ghost_1.png", "img/ghost_2.png"]
+    var rndGhost = Math.floor(Math.random() * ghostPng.length)
+    var ghost = document.createElement('img')
+    ghost.src = ghostPng[rndGhost]
+    ghost.className = 'ghosts animation'
+    ghost.style.left = posX + 'px'
+    ghost.style.top = posY + 'px'
+    ghost.style.position = 'absolute'
+    ghost.id = 'idPng'
+    document.body.appendChild(ghost)  
+    ghost.onmouseover = function () {
         this.remove()
+        points++
     }
 }
 var chr = setInterval(function () {
@@ -58,5 +58,7 @@ var chr = setInterval(function () {
         window.location.href = 'win.html'
     } else {
         document.getElementById('chr').innerHTML = chrRmng
+        
     }
 }, 1000)
+
