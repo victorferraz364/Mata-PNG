@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    font-size: 20px;
+}
 body {
     background: url("../img/bg_game.png") no-repeat;
     background-color: #432b85;
@@ -10,6 +13,7 @@ body {
     background-position: center;
     color: white;
     font-family: Halloween;
+   
 }
 
 @font-face {
@@ -18,16 +22,45 @@ body {
 }
 .content {
     position: relative;
-    color: white;
     text-align: center;
     height: 00vh;
+    justify-content: center;
+    display: flex;
 }
-h2 {
-    font-size: max(60px, 5vw);
+.content h2 {
+    position: absolute;
+    font-size: clamp(10vw, 8rem, 10vw);
     text-align: center; 
+    animation: pulsate 5s alternate infinite;
+    transform: translate(0, 70px) rotate(-6deg);
 }
 .container {
     height: 100vh;
+}
+.container h2{
+    font-size: 6vw;
+    text-align: center; 
+    animation: pulsate 5s alternate infinite;
+}
+.container p {
+    font-size: 2vw;
+}
+.container button {
+    margin-top: 40px;
+    background-color: transparent;
+    border: 5px solid #9809d1;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+}
+.container button:hover {
+    background-color: #9809d1;
+}
+.img-win {
+    max-width: 250px;
+}
+.img-over {
+    max-width: 200px;
 }
 .container-index {
     display: flex;
@@ -35,16 +68,18 @@ h2 {
     justify-content: center;
     height: 100vh;
 }
+
 .container-index button {
     position: absolute;
     top: 40%;
     left: 54%;
+    text-align: center;
     transform: translate(-50%, -50%);
-    padding: 30px;
-}
-.btn-index {
-    background-color: rgb(0, 0, 0);
-    
+    background-color: #960ccc;
+    color: white;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .box {
     position: relative;
@@ -57,12 +92,11 @@ h2 {
 }
 .btn-back {
     margin-top: 10px;
-  padding: 20px 60px;
+    padding: 20px 60px;
 }
 .ghosts {
     width: 90px;
     height: 75px;
- 
 }
 .life {
     width: 80px;
@@ -78,10 +112,30 @@ h2 {
 @keyframes fly {
     to {
         transform: translateX(0);
-        rotate: 31deg; 
+        rotate: 23deg; 
         
     }
     from {
         transform: translateX(80%);
     }
 }
+
+@keyframes pulsate {
+        100% {
+          /* Larger blur radius */
+          text-shadow:
+         
+            0 0 45px #9508cc,
+            0 0 50px #9508cc,
+            0 0 75px #9508cc;
+        }
+        0% {
+          /* Smaller blur radius */
+          text-shadow:
+         
+            0 0 27px #9508cc,
+            0 0 35px #9508cc,
+            0 0 40px #9508cc;
+        }
+      }
+      

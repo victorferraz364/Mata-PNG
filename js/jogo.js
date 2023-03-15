@@ -16,7 +16,7 @@ function posRnd() {
     if (document.getElementById('idPng')) {
         document.getElementById('idPng').remove()
         
-        if (life > 4) {
+        if (life > 900) {
             window.location.href = "over.html"
           
         } else {
@@ -27,8 +27,8 @@ function posRnd() {
         }
     }
     
-    var posX = Math.floor(Math.random() * widhtBody) -130
-    var posY = Math.floor(Math.random() * heightBody) -100
+    var posX = Math.floor(Math.random() * widhtBody) - 130
+    var posY = Math.floor(Math.random() * heightBody) - 100
     console.log(posX, posY)
     
     posX = posX < 120 ? 120 : posX 
@@ -49,6 +49,7 @@ function posRnd() {
         this.remove()
         points++
     }
+    document.getElementById('points').innerHTML = points
 }
 var chr = setInterval(function () {
     chrRmng -= 1
@@ -61,4 +62,3 @@ var chr = setInterval(function () {
         
     }
 }, 1000)
-
