@@ -16,7 +16,7 @@ function posRnd() {
     if (document.getElementById('idPng')) {
         document.getElementById('idPng').remove()
         
-        if (life > 900) {
+        if (life > 4) {
             window.location.href = "over.html"
           
         } else {
@@ -27,8 +27,8 @@ function posRnd() {
         }
     }
     
-    var posX = Math.floor(Math.random() * widhtBody) - 130
-    var posY = Math.floor(Math.random() * heightBody) - 100
+    var posX = Math.floor(Math.random() * widhtBody) - 120
+    var posY = Math.floor(Math.random() * heightBody) - 120
     console.log(posX, posY)
     
     posX = posX < 120 ? 120 : posX 
