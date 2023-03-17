@@ -17,7 +17,7 @@ function posRnd() {
         document.getElementById('idPng').remove()
         
         if (life > 4) {
-            window.location.href = "over.html"
+            window.location.href = 'win.html'
           
         } else {
 
