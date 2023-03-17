@@ -6,7 +6,7 @@ var points = 0
 
 function sizeFix() {
 	heightBody = window.innerHeight
-     widhtBody = window.innerWidth
+     	widhtBody = window.innerWidth
 
 }
 sizeFix()
@@ -17,8 +17,9 @@ function posRnd() {
         document.getElementById('idPng').remove()
         
         if (life > 4) {
-            window.location.href = 'win.html'
-          
+		
+            window.location.href = 'over.html'
+		
         } else {
 
             document.getElementById('lf' + life).src = ("img/life_over.png")
