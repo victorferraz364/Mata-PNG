@@ -12,4 +12,4 @@ como menciado, o jogo se baseava em um spawn aleatoria de mosquitos em um interv
 Na minha versão vou usar o tema de halloween, usando um pouco do que sei em edição de imagem para criar minhas pngs, e brincar um pouco com animações de css para os fantasmas e outros estilos que pode ser verificado no projeto.
 
 <h2>Finalizando</h2>
-Tive um bom trabalho com esse projeto, eu vi que devo praticar e rever mais conteudos, pricinpalmente de css. Acabei fazeno um mix de css com bosttrap, a montagem de cenários não ficou de maneira ideal, no geral é uma grande gambiarra que funciona, haha. 
+Tive um bom trabalho com esse projeto, eu vi que devo praticar e rever mais conteudos, pricinpalmente de css. Acabei fazeno um mix de css com bosttrap, a montagem de cenários não ficou de maneira ideal. Em js eu coloquei todas as variaveis em ingles e em css eu acabei usando em PT, além de outros erros em nomeação.
