@@ -18,7 +18,7 @@ function posRnd() {
         
         if (life > 4) {
 		
-            victorferraz364.github.io/Mata-Fantasmas/over.html
+            window.location.href = 'over.html'
 		
         } else {
 
